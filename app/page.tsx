@@ -13,12 +13,16 @@ export default function Home() {
         <Logo />
       </div>
 
-      <div className="absolute top-4 left-4 right-4">
+      {/*<div className="absolute top-4 left-4 right-4">
         <Manifesto />
-      </div>
+      </div>*/}
       
       <div className="absolute top-1/2 left-4 right-4 -translate-y-1/2 mt-8">
         <Letter />
+      </div>
+
+      <div className="absolute bottom-0 left-0 w-full">
+        <Hamsters />
       </div>
 
     </main>
