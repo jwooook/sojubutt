@@ -1,7 +1,14 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
-    <main style={{ padding: 40 }}>
-      <h1>https://chichithehamster.com</h1>
+    <main className="flex items-center justify-center min-h-screen bg-[#c00500]">
+      <Image
+        src="/maaiii.PNG"
+        alt="sojubutt logo"
+        width={400}
+        height={400}
+      />
     </main>
   );
 }
