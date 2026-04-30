@@ -9,7 +9,7 @@ export default function Home() {
     <main className="relative min-h-screen bg-[#e10600]">
 
       {/* Centered logo */}
-      <div className="absolute inset-0 flex items-center justify-center">
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
         <Logo />
       </div>
 
