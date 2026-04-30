@@ -17,7 +17,7 @@ export default function Home() {
         <Manifesto />
       </div>
       
-      <div className="absolute top-1/2 left-4 right-4 -translate-y-1/2 mt-12">
+      <div className="absolute top-1/2 left-4 right-4 -translate-y-1/2 mt-8">
         <Letter />
       </div>
 
