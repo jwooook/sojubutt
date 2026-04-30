@@ -6,6 +6,9 @@ export default function Hamsters({ className = "" }: { className?: string }) {
       <Image src="/chichi_arm.png" alt="hamster" width={220} height={220} />
       <Image src="/chichi_arm.png" alt="hamster" width={220} height={220} />
       <Image src="/chichi_arm.png" alt="hamster" width={220} height={220} />
+      <Image src="/chichi_arm.png" alt="hamster" width={220} height={220} />
+      <Image src="/chichi_arm.png" alt="hamster" width={220} height={220} />
+      <Image src="/chichi_arm.png" alt="hamster" width={220} height={220} />
     </div>
   );
 }
