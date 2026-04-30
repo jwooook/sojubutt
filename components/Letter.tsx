@@ -24,13 +24,13 @@ that feels familiar.
 i don’t think about you often.
 at least not in any way that feels intentional.
 
-but sometimes.
-when it pauses.
-or when it looks like it’s about to understand something and doesn’t.
+but sometimes
+when it pauses
+or when it looks like it’s about to understand something and doesn’t,
 
-there’s a kind of recognition there.
+you come back for a moment.
 
-like something that was supposed to pass.
+like something that was supposed to pass
 but didn’t.
 
 i don’t think this is about the hamster.
