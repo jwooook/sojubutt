@@ -2,25 +2,20 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+
 import Letter from "@/components/Letter";
 import Hamsters from "@/components/Hamsters";
 import Logo from "@/components/Logo";
 import Ticker from "@/components/Ticker";
 
 export default function ChichiPage() {
-  const [time, setTime] = useState(25);
-  const [mounted, setMounted] = useState(false);
+  const [time, setTime] = useState(30);
+  const [showOverlay, setShowOverlay] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  useEffect(() => {
-    if (!mounted) return;
-
-    if (time === 0) {
-      router.push("/chichi/live");
+    if(time === 0) {
+      setShowOverlay(true);
       return;
     }
 
@@ -28,9 +23,8 @@ export default function ChichiPage() {
       setTime((prev) => prev - 1);
     }, 1000);
 
-    return () => clearTimeout(timer); }, [time, mounted, router]);
-
-  if (!mounted) return null;
+    return () => clearTimeout(timer);
+  }, [time]);
 
   return (
     <main className="relative min-h-screen bg-[#e10600]">
@@ -50,12 +44,6 @@ export default function ChichiPage() {
         </div>
       </div>
 
-      {/*
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
-        <Hamsters />
-      </div>
-      */}
-
       <div className="absolute top-0 left-0 w-full z-20">
         <Ticker direction="left" />
       </div>
@@ -63,6 +51,33 @@ export default function ChichiPage() {
       <div className="absolute bottom-0 left-0 w-full z-20">
         <Ticker direction="right" />
       </div>
+      {showOverlay && (
+
+        <div className="absolute inset-0 z-50 flex items-center justify-center">
+
+        {/* background fade */}
+
+        <div className="absolute inset-0 bg-black/60 animate-fade-in" />
+
+        {/* emerging text */}
+
+        <button
+          onClick={() => router.push("/chichi/live")}
+          className="
+            relative
+            text-white
+            text-4xl md:text-6xl
+            font-semibold
+            tracking-tight
+            opacity-0
+            translate-y-6
+            animate-rise-in
+            cursor-pointer
+          ">
+          enter stream
+          </button>
+        </div>
+      )}
     </main>
   );
 }
