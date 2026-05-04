@@ -1,4 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
 @import "tailwindcss";
+
+.font-space {
+  font-family: 'Orbitron', sans-serif;
+}
 
 :root {
   --background: #ffffff;

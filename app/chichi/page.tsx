@@ -29,7 +29,7 @@ export default function ChichiPage() {
   return (
     <main className="relative min-h-screen bg-[#e10600]">
       <div className="absolute top-4 right-4 text-white">
-        <p className="text-xs opacity-60">redirecting</p>
+        <p className="text-xs opacity-60">chichi the hamster in...</p>
         <p className="text-xl">{time}</p>
       </div>
       {/* Logo — dead center, independent */}
