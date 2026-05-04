@@ -21,9 +21,9 @@ export default function Home() {
         <Letter />
       </div>
 
-      <div className="absolute bottom-0 left-0 w-full">
+      {/*<div className="absolute bottom-0 left-0 w-full">
         <Hamsters />
-      </div>
+      </div>*/}
 
     </main>
   );
