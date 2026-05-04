@@ -40,7 +40,7 @@ export default function ChichiPage() {
       {/* Letter — centered container */}
       <div className="absolute inset-0 flex items-center justify-center z-10">
         <div className="w-full max-w-lg px-6">
-          <Letter className="text-center" />
+          <Letter className="text-center text-sm md:text-base" />
         </div>
       </div>
 
