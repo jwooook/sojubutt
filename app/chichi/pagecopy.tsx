@@ -1,43 +1,12 @@
-"use client";
-
-import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 import Letter from "@/components/Letter";
 import Hamsters from "@/components/Hamsters";
 import Logo from "@/components/Logo";
 import Ticker from "@/components/Ticker";
 
-export default function ChichiPage() {
-  const [time, setTime] = useState(12);
-  const [mounted, setMounted] = useState(false);
-  const router = useRouter();
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  useEffect(() => {
-    if (!mounted) return;
-
-    if (time === 0) {
-      router.push("/chichi/live");
-      return;
-    }
-
-    const timer = setTimeout(() => {
-      setTime((prev) => prev - 1);
-    }, 1000);
-
-    return () => clearTimeout(timer); }, [time, mounted, router]);
-
-  if (!mounted) return null;
-
+export default function Home() {
   return (
     <main className="relative min-h-screen bg-[#e10600]">
-      <div className="absolute top-4 right-4 text-white">
-        <p className="text-xs opacity-60">redirecting</p>
-        <p className="text-xl">{time}</p>
-      </div>
+
       {/* Logo — dead center, independent */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
         <Logo />
@@ -63,6 +32,7 @@ export default function ChichiPage() {
       <div className="absolute bottom-0 left-0 w-full z-20">
         <Ticker direction="right" />
       </div>
+
     </main>
   );
 }
