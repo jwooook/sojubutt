@@ -9,7 +9,7 @@ export default function Home() {
       </div>
 
       <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
-        <h1 className="text-white text-5xl md:text-7xl font-bold font-space tracking-tight">
+        <h1 className="text-white text-5xl md:text-7xl animate-micro-glitch font-bold font-space tracking-tight">
           coming soon!
         </h1>
       </div>

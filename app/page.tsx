@@ -18,6 +18,7 @@ export default function Home() {
             text-white
             text-3xl md:text-5xl
 
+            animate-micro-glitch
             font-space
             tracking-[0.12em]
 
@@ -34,6 +35,9 @@ export default function Home() {
           flex items-center justify-center
           text-white/10
           text-4xl md:text-6xl
+
+          animate-micro-glitch
+
           font-space
           tracking-[0.18em]
 
