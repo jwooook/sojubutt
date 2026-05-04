@@ -11,6 +11,7 @@ export default function Letter({ className }: Props) {
         w-full
         select-text
         whitespace-pre-line
+        text-[#FFFFFF]
 
         font-semibold
         tracking-tight
