@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Manifesto from "@/components/Manifesto";
 import Letter from "@/components/Letter";
 import Hamsters from "@/components/Hamsters";
 import Logo from "@/components/Logo";
@@ -8,22 +6,24 @@ export default function Home() {
   return (
     <main className="relative min-h-screen bg-[#e10600]">
 
-      {/* Centered logo */}
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+      {/* Logo — dead center, independent */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
         <Logo />
       </div>
 
-      {/*<div className="absolute top-4 left-4 right-4">
-        <Manifesto />
-      </div>*/}
-      
-      <div className="absolute top-1/2 left-4 right-4 -translate-y-1/2 mt-8">
-        <Letter />
+      {/* Letter — centered container */}
+      <div className="absolute inset-0 flex items-center justify-center z-10">
+        <div className="w-full max-w-lg px-6">
+          <Letter className="text-center" />
+        </div>
       </div>
 
-      {/*<div className="absolute bottom-0 left-0 w-full">
+      {/* Hamsters (optional) */}
+      {/*
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
         <Hamsters />
-      </div>*/}
+      </div>
+      */}
 
     </main>
   );

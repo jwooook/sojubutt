@@ -1,6 +1,6 @@
 export default function Letter(){
   return (
-     <p className="leading-relaxed text-[#e10600]">
+     <p className="break-words leading-relaxed text-[#000000] w-full select-text whitespace-pre-line">
 i didn’t think a hamster would become a problem.
 
 not in any meaningful sense.
