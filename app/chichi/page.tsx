@@ -72,6 +72,7 @@ export default function ChichiPage() {
             opacity-0
             translate-y-6
             animate-rise-in
+            animate-flicker
             cursor-pointer
           ">
           enter stream

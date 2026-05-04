@@ -84,3 +84,36 @@ p {
   animation: rise-in 1.4s ease forwards;
   animation-delay: 0.4s;
 }
+
+@keyframes flicker {
+
+  0%   { opacity: 1; }
+
+  5%   { opacity: 0.3; }
+
+  10%  { opacity: 1; }
+
+  15%  { opacity: 0.6; }
+
+  20%  { opacity: 1; }
+
+  30%  { opacity: 0.2; }
+
+  40%  { opacity: 1; }
+
+  55%  { opacity: 0.5; }
+
+  70%  { opacity: 1; }
+
+  85%  { opacity: 0.4; }
+
+  100% { opacity: 1; }
+
+}
+
+.animate-flicker {
+
+  animation: flicker 1.5s infinite;
+  animation-delay: 0.8s;
+
+}
