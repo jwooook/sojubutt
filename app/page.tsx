@@ -9,7 +9,7 @@ export default function Home() {
       </div>
 
       <Link
-        href="/chichi"
+        href="/hamsterstream"
         className="absolute top-4 left-4 text-white font-semibold">
         /chichi
       </Link>
