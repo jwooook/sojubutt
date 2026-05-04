@@ -9,9 +9,9 @@ export default function Home() {
       </div>
 
       <Link
-        href="/hamsterstream"
+        href="/chichi"
         className="absolute top-4 left-4 text-white font-semibold">
-        /chichi
+        /hamsterstream
       </Link>
     </main>
   );
