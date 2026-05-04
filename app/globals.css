@@ -27,3 +27,29 @@ body {
 p {
   -webkit-user-select: text;
 }
+
+@keyframes ticker-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes ticker-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-ticker-left {
+  animation: ticker-left 10s linear infinite;
+}
+
+.animate-ticker-right {
+  animation: ticker-right 10s linear infinite;
+}

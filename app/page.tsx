@@ -1,6 +1,7 @@
 import Letter from "@/components/Letter";
 import Hamsters from "@/components/Hamsters";
 import Logo from "@/components/Logo";
+import Ticker from "@/components/Ticker";
 
 export default function Home() {
   return (
@@ -18,12 +19,19 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Hamsters (optional) */}
       {/*
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
         <Hamsters />
       </div>
       */}
+
+      <div className="absolute top-0 left-0 w-full z-20">
+        <Ticker direction="left" />
+      </div>
+
+      <div className="absolute bottom-0 left-0 w-full z-20">
+        <Ticker direction="right" />
+      </div>
 
     </main>
   );
