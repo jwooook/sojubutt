@@ -68,8 +68,11 @@ export default function ChichiPage() {
             text-white
             text-4xl md:text-6xl
             font-semibold
-            tracking-tight
+            tracking-[0.2em]
             opacity-0
+
+            font-space
+
             translate-y-6
             animate-rise-in
             animate-flicker

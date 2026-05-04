@@ -13,15 +13,13 @@ export default function Letter({ className }: Props) {
         whitespace-pre-line
         text-[#FFFFFF]
 
+        font-space
+
         font-semibold
         tracking-tight
 
         ${className}
       `}
-      style={{
-        fontFamily:
-          '-apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif',
-      }}
     >
     {`i didn’t think a hamster would become a problem. not in any meaningful sense. not in a way that would linger. but it’s there. making small noises at night. running in place like it’s convinced that counts as going somewhere. you told me to get it. and at the time it felt like nothing. just another small suggestion. the kind that doesn’t carry weight until it does.
 
