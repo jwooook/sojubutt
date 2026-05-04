@@ -1,4 +1,8 @@
-export default function Letter(){
+type Props = {
+  className?: string;
+};
+
+export default function Letter({ className }: Props){
   return (
      <p className="break-words leading-relaxed text-[#000000] w-full select-text whitespace-pre-line">
 i didn’t think a hamster would become a problem.

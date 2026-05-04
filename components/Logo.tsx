@@ -4,10 +4,10 @@ export default function Logo({ className = "" }: { className?: string }) {
   return (
     <Image
       src="/maaii.PNG"
-      alt="sojubutt logo"
+      alt="logo"
       width={120}
       height={120}
-      className={className}
+      className="w-32 h-auto"
       priority
     />
   );
