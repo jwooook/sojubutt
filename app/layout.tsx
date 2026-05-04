@@ -4,8 +4,10 @@ import { Analytics } from '@vercel/analytics/react';
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="animate-glitch-trigger">{children}</body>
-      <Analytics />
+      <body className="animate-glitch-trigger">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
