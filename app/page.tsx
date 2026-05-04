@@ -9,7 +9,7 @@ export default function Home() {
         <Logo />
       </div>
       {/*container*/}
-      <div className="absolute top-6 left-6">
+      <div className="absolute bottom-6 left-6">
         {/* TEXT (main interaction) */}
         <Link
           href="/chichi"
