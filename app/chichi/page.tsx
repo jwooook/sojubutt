@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import HiddenBackButton from "./HiddenBackButton";
 
 import Letter from "@/components/Letter";
 import Hamsters from "@/components/Hamsters";
@@ -28,6 +29,7 @@ export default function ChichiPage() {
 
   return (
     <main className="relative min-h-screen bg-[#e10600]">
+      <HiddenBackButton />
       <div className="absolute top-4 right-4 text-white">
         <p className="text-xs opacity-60">chichi the hamster in...</p>
         <p className="text-xl">{time}</p>
@@ -45,12 +47,13 @@ export default function ChichiPage() {
       </div>
 
       <div className="absolute top-0 left-0 w-full z-20">
-        <Ticker direction="left" />
+        <Ticker direction="left" src="/chichi.png" />
       </div>
 
       <div className="absolute bottom-0 left-0 w-full z-20">
-        <Ticker direction="right" />
+        <Ticker direction="right" src= "/chichi.png" />
       </div>
+
       {showOverlay && (
 
         <div className="absolute inset-0 z-50 flex items-center justify-center">
