@@ -13,7 +13,7 @@ export default function HiddenBackButton() {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onClick={() => router.push("/")}
-      className="fixed top-1/2 right-4 w-40 h-40 cursor-pointer z-50"
+      className="fixed top-1/2 right-4 w-14 h-14 cursor-pointer z-50"
     >
       {hovered && (
         <div className="w-full h-full transition-opacity duration-300 opacity-100">
