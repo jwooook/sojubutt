@@ -22,7 +22,7 @@ the kind that doesn’t carry weight until it does.
 now it eats.
 it sleeps.
 it stares at nothing in particular.
-and for some reason.
+and for some reason
 that feels familiar.
 
 i don’t think about you often.
