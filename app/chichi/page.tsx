@@ -8,7 +8,7 @@ import Logo from "@/components/Logo";
 import Ticker from "@/components/Ticker";
 
 export default function ChichiPage() {
-  const [time, setTime] = useState(12);
+  const [time, setTime] = useState(25);
   const [mounted, setMounted] = useState(false);
   const router = useRouter();
 
