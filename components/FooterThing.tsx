@@ -102,7 +102,7 @@ export default function FooterThing({
               <img
                 src="/chichi.png"
                 alt="submit"
-                classname="w-4 h-4 object-contain"
+                className="w-4 h-4 object-contain"
             />
         )}
         </button>
