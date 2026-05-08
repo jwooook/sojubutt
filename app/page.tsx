@@ -109,7 +109,7 @@ export default function Home() {
               hover:opacity-80
             "
           >
-            00 get useful email
+            00 receive useful email
           </Link>
 
           {/* GHOST TEXT */}
