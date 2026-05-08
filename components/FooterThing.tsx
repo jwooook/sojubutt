@@ -71,14 +71,15 @@ export default function FooterThing({
             py-2
             text-center
             font-space
-            placeholder:text-black/20
+            text-white
+            placeholder:text-white/30
+            caret-white
             transition-all
             duration-300
-            min-w-[480px]
+            w-[280px] md:w-[480px]
           "
         />
 
-        {/* weird glitch submit */}
         <button
           type="submit"
           disabled={loading}
@@ -89,7 +90,7 @@ export default function FooterThing({
             -right-18
             top-1/2
             -translate-y-1/2
-            opacity-09
+            opacity-15
             hover:opacity-40
             hover:scale-110
             active:scale-90
@@ -102,7 +103,7 @@ export default function FooterThing({
               <img
                 src="/chichi.png"
                 alt="submit"
-                className="w-4 h-4 object-contain"
+                className="w-6 h-6 object-contain"
             />
         )}
         </button>

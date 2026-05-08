@@ -161,3 +161,15 @@ p {
 .animate-glitch-trigger {
   animation: glitch-trigger 6s infinite;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #e10600 inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  caret-color: #ffffff !important;
+
+  transition: background-color 9999s ease-in-out 0s;
+}
