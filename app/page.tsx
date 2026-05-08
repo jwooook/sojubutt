@@ -82,7 +82,7 @@ export default function Home() {
         </div>
 
         {/* FOOTERTHING / EMAIL */}
-        <div className="relative w-fit opacity-80 hover:opacity-100 transition-opacity">
+        <div className="relative w-fit">
           <Link
             href="/footerthing"
             className="
