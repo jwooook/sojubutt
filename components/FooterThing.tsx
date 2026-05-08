@@ -38,7 +38,7 @@ export default function FooterThing({
 
   if (submitted) {
     return (
-      <p className="font-space text-[#FFFFFF] animate-pulse font-semibold">
+      <p className="text-center font-space text-[#FFFFFF] animate-pulse font-semibold">
         nicely done.
       </p>
     )
