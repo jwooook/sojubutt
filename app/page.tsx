@@ -133,7 +133,7 @@ export default function Home() {
               whitespace-nowrap
             "
           >
-            getrandomemail
+            getusefulemail
           </p>
         </div>
 
