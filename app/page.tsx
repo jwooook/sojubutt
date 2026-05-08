@@ -53,7 +53,7 @@ export default function Home() {
               hover:opacity-80
             "
           >
-            01 enter hamsterstream
+            01 hamsterstream
           </Link>
 
           {/* GHOST TEXT */}
