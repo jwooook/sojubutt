@@ -51,7 +51,7 @@ export default function FooterThing({
     >
       <div className="space-y-2">
         <p className="font-space lowercase text-[#FFFFFF] font-semibold">
-          btw nothing here is useful. but maybe i'll send something useful back.
+          btw nothing here is useful. but maybe i'll send something useful.
         </p>
       </div>
 
