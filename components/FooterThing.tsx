@@ -90,8 +90,8 @@ export default function FooterThing({
             -right-18
             top-1/2
             -translate-y-1/2
-            opacity-15
-            hover:opacity-40
+            opacity-05
+            hover:opacity-25
             hover:scale-110
             active:scale-90
             duration-150
@@ -103,7 +103,7 @@ export default function FooterThing({
               <img
                 src="/chichi.png"
                 alt="submit"
-                className="w-6 h-6 object-contain"
+                className="w-12 h-12 object-contain"
             />
         )}
         </button>
