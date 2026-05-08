@@ -3,8 +3,8 @@ import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "sojubutt",
-  description: "useless useful things and stuff",
+  title: "hi there",
+  description: "useless useful stuff",
   icons: {
     icon: "/favicon.ico",
   },
