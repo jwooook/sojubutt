@@ -25,7 +25,7 @@ export default function Letter({ className }: Props) {
 
 now it eats. it sleeps. it stares at nothing in particular. and for some reason that feels familiar.
 
-i don’t think about u often. at least not in any way that feels intentional. but sometimes when it pauses or when it looks like it’s about to understand something and doesn’t, you come back for a moment. like something that was supposed to pass but didn’t.
+i don’t think about u often. at least not in any way that feels intentional. but sometimes when it pauses or when it looks like it’s about to understand something and doesn’t, u come back for a moment. like something that was supposed to pass but didn’t.
 
 i don’t think this is about the hamster.
 but it’s also not not about the hamster.
