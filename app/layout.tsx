@@ -1,9 +1,13 @@
 import "./globals.css";
 import { Analytics } from '@vercel/analytics/react';
+import type { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "sojubutt",
-  description: "random stuff",
+  description: "useless useful things and stuff",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
