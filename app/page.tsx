@@ -90,8 +90,8 @@ export default function Home() {
               z-10
               block
 
-              text-lg
-              sm:text-xl
+              text-xl
+              sm:text-2xl
               md:text-5xl
 
               animate-micro-glitch
@@ -105,6 +105,8 @@ export default function Home() {
 
               hover:tracking-[0.15em]
               md:hover:tracking-[0.2em]
+
+              hover:opacity-80
             "
           >
             00 getrandomemail
