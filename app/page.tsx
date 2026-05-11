@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <main className="relative h-screen overflow-hidden bg-[#e10600] text-white flex items-center justify-center">
 
-      {/* CENTER LOGO */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 scale-75 md:scale-100">
         <Logo />
       </div>
@@ -56,7 +55,6 @@ export default function Home() {
             01 hamsterstream
           </Link>
 
-          {/* GHOST TEXT */}
           <p
             className="
               absolute
@@ -112,7 +110,6 @@ export default function Home() {
             00 receive useful email
           </Link>
 
-          {/* GHOST TEXT */}
           <p
             className="
               absolute

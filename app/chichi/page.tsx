@@ -10,7 +10,7 @@ import Logo from "@/components/Logo";
 import Ticker from "@/components/Ticker";
 
 export default function ChichiPage() {
-  const [time, setTime] = useState(30);
+  const [time, setTime] = useState(10);
   const [showOverlay, setShowOverlay] = useState(false);
   const router = useRouter();
 
