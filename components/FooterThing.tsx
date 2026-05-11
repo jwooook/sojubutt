@@ -38,7 +38,7 @@ export default function FooterThing({
 
   if (submitted) {
     return (
-      <p className="text-center font-space text-[#FFFFFF] animate-pulse font-semibold">
+      <p className="text-xl text-center font-space text-[#FFFFFF] animate-pulse font-semibold">
         nicely done.
       </p>
     )
@@ -99,7 +99,7 @@ export default function FooterThing({
           "
         >
           {loading ? (
-            <span className="text-xs font-space">...</span>) : (
+            <span className="text-xs font-space text-[#FFFFFF] font-space">wait</span>) : (
               <img
                 src="/chichi.png"
                 alt="submit"
