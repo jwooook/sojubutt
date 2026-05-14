@@ -20,7 +20,7 @@ export default function Letter({ className }: Props) {
 
         ${className}
       `}
-    >{"this hamster's name is chichi."}
+    >{"chat away with hamster chichi."}
     </p>
   );
 }
