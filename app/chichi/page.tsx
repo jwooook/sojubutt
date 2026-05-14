@@ -10,7 +10,7 @@ import Logo from "@/components/Logo";
 import Ticker from "@/components/Ticker";
 
 export default function ChichiPage() {
-  const [time, setTime] = useState(10);
+  const [time, setTime] = useState(9);
   const [showOverlay, setShowOverlay] = useState(false);
   const router = useRouter();
 
@@ -30,7 +30,7 @@ export default function ChichiPage() {
   return (
     <main className="relative min-h-screen bg-[#e10600]">
       <HiddenBackButton />
-      <div className="absolute top-4 right-4 text-white">
+      <div className="absolute top-24 right-16 font-space text-white text-xl">
         <p className="text-xs opacity-60">chichi the hamster in...</p>
         <p className="text-xl">{time}</p>
       </div>
