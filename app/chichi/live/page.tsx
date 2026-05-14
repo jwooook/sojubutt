@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import Ticker from "@/components/Ticker";
 import Logo from "@/components/Logo";
 import { supabase } from "@/lib/supabase";
+import Chinifesto from "@/components/Chinifesto";
 
 export default function Home() {
   const [messages, setMessages] = useState<any[]>([]);
@@ -83,10 +84,23 @@ export default function Home() {
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 opacity-20">
         <Logo />
       </div>
-      <div className="absolute top-0 left-0 w-full z-30">
-        <Ticker direction="left" />
+      {/* CHINIFESTO */}
+      <div
+        className="
+          absolute
+          top-4
+          left-4
+          md:top-4
+          md:left-6
+          z-40
+          w-[990px]
+          sm:w-[100px]
+          md:w-[160px]
+          pointer-events-auto
+        "
+      >
+        <Chinifesto />
       </div>
-
       {/* Bottom Ticker */}
       <div className="absolute bottom-0 left-0 w-full z-30">
         <Ticker direction="right" />
