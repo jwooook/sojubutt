@@ -1,6 +1,12 @@
 import "./globals.css";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
+import { Orbitron } from "next/font/google";
+
+const orbitron = Orbitron({
+  subsets: ["latin"],
+  variable: "--font-orbitron",
+});
 
 export const metadata: Metadata = {
   title: "hi there",
@@ -10,10 +16,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body className="animate-glitch-trigger">
+      <body
+        className={`${orbitron.className} animate-glitch-trigger`}
+      >
         {children}
         <Analytics />
       </body>

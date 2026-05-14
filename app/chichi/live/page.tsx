@@ -83,11 +83,9 @@ export default function Home() {
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 opacity-20">
         <Logo />
       </div>
-
-      {/* Top Ticker */}
-      <div className="absolute top-0 left-0 w-full z-30">
+      {/* <div className="absolute top-0 left-0 w-full z-30">
         <Ticker direction="left" />
-      </div>
+        </div>*/}
 
       {/* Bottom Ticker */}
       <div className="absolute bottom-0 left-0 w-full z-30">
@@ -105,7 +103,7 @@ export default function Home() {
 
               {/* Replace VIDEO_ID with your livestream ID */}
               <iframe
-                src="https://www.youtube.com/embed/VIDEO_ID"
+                src="https://youtube.com/embed/IMMY_8Auam8?feature=share"
                 className="w-full h-full"
                 allowFullScreen
               />
