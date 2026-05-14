@@ -107,7 +107,7 @@ export default function Home() {
               hover:opacity-80
             "
           >
-            00 receive useful email
+            00 receive email
           </Link>
 
           <p
