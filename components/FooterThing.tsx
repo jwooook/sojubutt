@@ -99,7 +99,7 @@ export default function FooterThing({
           "
         >
           {loading ? (
-            <span className="text-xs font-space text-[#FFFFFF] font-space">wait</span>) : (
+            <span className="text-xs font-space text-[#FFFFFF] font-space">loading...</span>) : (
               <img
                 src="/chichi.png"
                 alt="submit"
