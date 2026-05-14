@@ -52,7 +52,7 @@ export default function Home() {
               hover:opacity-80
             "
           >
-            01 persistent hamsterstream
+            01 hamsterstream
           </Link>
 
           <p
