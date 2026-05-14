@@ -93,9 +93,8 @@ export default function Home() {
           md:top-4
           md:left-6
           z-40
-          w-[690px]
-          sm:w-[100px]
-          md:w-[160px]
+          sm:w-[300px]
+          md:w-[460px]
           pointer-events-auto
         "
       >
