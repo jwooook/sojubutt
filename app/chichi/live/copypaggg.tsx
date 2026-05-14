@@ -78,7 +78,6 @@ export default function Home() {
 
   return (
     <main className="relative text-white min-h-screen overflow-hidden bg-[#e10600]">
-
       {/* Background Logo */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 opacity-20">
         <Logo />
@@ -95,9 +94,8 @@ export default function Home() {
       </div>
 
       {/* Main Layout */}
-      <div className="relative z-20 min-h-screen flex items-center justify-center px-4 py-20 md:px-6">
-
-        <div className="w-full max-w-7xl flex flex-col lg:grid lg:grid-cols-3 gap-4 md:gap-6">
+      <div className="relative z-20 h-screen flex items-center justify-center px-6">
+        <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-6">
 
           {/* STREAM */}
           <div className="lg:col-span-2">
@@ -113,38 +111,19 @@ export default function Home() {
           </div>
 
           {/* CHAT */}
-          <div
-            className="
-              h-[55vh]
-              md:h-[60vh]
-              lg:h-[70vh]
-              rounded-2xl
-              border
-              border-white/10
-              bg-white/5
-              backdrop-blur-md
-              overflow-hidden
-              shadow-2xl
-              flex
-              flex-col
-            "
-          >
+          <div className="h-[70vh] rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md overflow-hidden shadow-2xl flex flex-col">
 
             {/* Header */}
-            <div className="px-4 py-3 border-b border-white/10 shrink-0">
-              <h2 className="font-space font-semibold tracking-wide text-sm md:text-base">
+            <div className="px-4 py-3 border-b border-white/10">
+              <h2 className="font-space font-semibold tracking-wide">
                 LIVE CHAT
               </h2>
             </div>
 
             {/* Messages */}
-            <div className="flex-1 overflow-y-auto p-3 md:p-4 space-y-3">
-
+            <div className="flex-1 overflow-y-auto p-4 space-y-3">
               {messages.map((msg) => (
-                <div
-                  key={msg.id}
-                  className="text-xs md:text-sm break-words leading-relaxed"
-                >
+                <div key={msg.id} className="text-sm break-words">
                   <span className="font-bold font-space">
                     {msg.username}
                   </span>
@@ -156,17 +135,7 @@ export default function Home() {
             </div>
 
             {/* Input */}
-            <div
-              className="
-                p-3
-                md:p-4
-                border-t
-                border-white/10
-                flex
-                gap-2
-                shrink-0
-              "
-            >
+            <div className="p-4 border-t border-white/10 flex gap-2">
               <input
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
@@ -176,35 +145,12 @@ export default function Home() {
                   }
                 }}
                 placeholder="say something..."
-                className="
-                  flex-1
-                  min-w-0
-                  bg-black/30
-                  border
-                  border-white/10
-                  rounded-lg
-                  px-3
-                  py-2
-                  outline-none
-                  font-space
-                  text-sm
-                "
+                className="flex-1 bg-black/30 border border-white/10 rounded-lg px-3 py-2 outline-none font-space"
               />
 
               <button
                 onClick={sendMessage}
-                className="
-                  px-3
-                  md:px-4
-                  py-2
-                  rounded-lg
-                  bg-white
-                  text-black
-                  font-semibold
-                  font-space
-                  text-sm
-                  shrink-0
-                "
+                className="px-4 py-2 rounded-lg bg-white text-black font-semibold font-space"
               >
                 send
               </button>
