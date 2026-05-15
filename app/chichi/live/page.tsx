@@ -17,6 +17,39 @@ export default function Home() {
 
   const bottomRef = useRef<HTMLDivElement | null>(null);
 
+  // TRACK LIVE VIEWERS
+  useEffect(() => {
+    const viewerId =
+      localStorage.getItem("viewer-id") ||
+      crypto.randomUUID();
+
+    localStorage.setItem("viewer-id", viewerId);
+
+    const presenceChannel = supabase.channel(
+      "live-viewers",
+      {
+        config: {
+          presence: {
+            key: viewerId,
+          },
+        },
+      }
+    );
+
+    presenceChannel.subscribe(async (status) => {
+      if (status === "SUBSCRIBED") {
+        await presenceChannel.track({
+          online_at: new Date().toISOString(),
+        });
+      }
+    });
+
+    return () => {
+      supabase.removeChannel(presenceChannel);
+    };
+  }, []);
+
+  // FETCH + SUBSCRIBE TO CHAT
   useEffect(() => {
     fetchMessages();
 
@@ -43,6 +76,7 @@ export default function Home() {
     };
   }, []);
 
+  // AUTO SCROLL CHAT
   useEffect(() => {
     bottomRef.current?.scrollIntoView({
       behavior: "smooth",
@@ -84,6 +118,7 @@ export default function Home() {
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 opacity-20">
         <Logo />
       </div>
+
       {/* CHINIFESTO */}
       <div
         className="
@@ -100,6 +135,7 @@ export default function Home() {
       >
         <Chinifesto />
       </div>
+
       {/* Bottom Ticker */}
       <div className="absolute bottom-0 left-0 w-full z-30">
         <Ticker direction="right" />
@@ -114,9 +150,8 @@ export default function Home() {
           <div className="lg:col-span-2">
             <div className="aspect-video w-full rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md overflow-hidden shadow-2xl">
 
-              {/* Replace VIDEO_ID with your livestream ID */}
               <iframe
-                src="https://youtube.com/embed/IMMY_8Auam8??autoplay=1&mute=1&controls=0&modestbranding=1&rel=0"
+                src="https://youtube.com/embed/IMMY_8Auam8?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0"
                 className="w-full h-full"
                 allowFullScreen
               />
@@ -211,7 +246,7 @@ export default function Home() {
                   rounded-lg
                   bg-white
                   text-black
-                  font-semibold
+[118;1:3u                  font-semibold
                   font-space
                   text-sm
                   shrink-0
@@ -220,8 +255,8 @@ export default function Home() {
                 send
               </button>
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
     </main>
